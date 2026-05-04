@@ -38,3 +38,27 @@ FAISS (semantic search) → Groq LLaMA3 (structured extraction)
 📁 Supports:
 - Video: .mp4, .mkv, .mov, .avi, .webm
 - Documents: .txt, .pdf, .docx
+
+
+
+MeetingIntelliDocs/
+│
+├── backend/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── rag_service.py
+│   ├── vector_store.py
+│   ├── embedding.py
+│   ├── transcriber.py
+│   └── file_parser.py
+│
+├── frontend/
+│   └── app.py
+│
+├── data/                        # auto created on first run
+│   ├── uploads/                 # uploaded video/audio files
+│   ├── transcripts/             # AssemblyAI transcript output
+│   └── faiss_index/             # FAISS vector index storage
+│
+├── .env                        
+└── requirements.txt
